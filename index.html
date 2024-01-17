@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/view.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/carousel/"
+    />
+    
+  </head>
+  <body>
+    <main class="mb-5 main-content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <img src="img/logo.png" width="40px" alt="" style="margin-right: 20px; margin-left: 30px;">
+          <a class="navbar-brand text-dark" href="#">
+            Desa Ekas <br>
+            <span class="small">Kabupaten Lombok Timur</span>
+          </a>
+          <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-dark">
+              <li class="nav-item">
+                <a class="nav-link btn btn-light text-dark mr-2" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light text-dark mr-2" href="#struktur-desa">Struktur Desa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light text-dark mr-2" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light text-dark" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-light text-dark" href="login.html">Login</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br>
+
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/pantai.jpg" alt="" style="width: 100%; height: 90vh; object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Selamat Datang.</h1>
+                <p class="opacity-80">
+                  Sistem Informasi ini sebagai wadah komunikasi bagi Desa wisata Ekas di Kabupaten Lombok Timur.
+                </p>
+                <p><a class="btn btn-lg btn-primary" style="border-radius: 30px; padding-left: 20px; padding-right: 20px;" href="#">Jelajahi</a></p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="carousel-item">
+            <img src="img/pantai3.jpg" alt="" style="width: 100%; height: 90vh; object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Desa Wisata Ekas.</h1>
+                <p>
+                  Some representative placeholder content for the second slide of the carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="carousel-item">
+            <img src="img/pantai2.jpg" alt="" style="width: 100%; height: 90vh; object-fit: cover;">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Some representative placeholder content for the third slide of this carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+    </main>
+
+    <main>
+      <div class="container" id="struktur-desa">
+        <div class="row">
+          <div class="col-md-3">
+              <h2 class="mb-4">Struktur Desa</h2>
+          </div>
+          <div class="col-md-9 text-md-end">
+              <hr class="hr-primary">
+          </div>
+      </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/resti.jpg" class="card-img-top rounded-circle" alt="Restiana">
+              <div class="card-body">
+                <h2 class="card-title fw-normal">Restiana</h2>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <a class="btn btn-primary" href="#">Profile details »</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/kepaladesa.jpg" class="card-img-top rounded-circle" alt="Muhammad Firas">
+              <div class="card-body">
+                <h2 class="card-title fw-normal">Muhammad Firas</h2>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <a class="btn btn-primary" href="#">Profile details »</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card h-100 border-0">
+              <img src="img/sekertaris.jpg" class="card-img-top rounded-circle" alt="Sahnim">
+              <div class="card-body">
+                <h2 class="card-title fw-normal">Sahnim</h2>
+                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+              <div class="card-footer border-0 bg-white">
+                <a class="btn btn-primary" href="#">Profile details »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5" id="location">
+        <div class="row">
+          <div class="col-md-3">
+              <h2 class="mb-4"><i class="fas fa-map-marker-alt"></i> Location</h2>
+          </div>
+          <div class="col-md-9 text-md-end">
+              <hr class="hr-primary">
+          </div>
+      </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Desa Ekas Buana</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe src="https://maps.google.com/maps?q=desa%20ekas%20buana&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 100%; height: 400px;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container vision-mission" id="about-us">
+        <div class="row">
+          <div class="col-md-2">
+              <h2 class="mb-4">About Us</h2>
+          </div>
+          <div class="col-md-10 text-md-end">
+              <hr class="hr-primary">
+          </div>
+      </div>
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <h3 class="text-center mb-4">Visi</h3>
+            <p class="text-justify">Menjadi destinasi wisata yang unggul dengan keindahan alam, budaya yang kaya, dan pelayanan terbaik untuk memberikan pengalaman tak terlupakan kepada pengunjung.</p>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="text-center mb-4">Misi</h3>
+            <ul>
+              <li>Pemeliharaan Alam dan Lingkungan: Menjaga kelestarian alam dan lingkungan sebagai aset utama desa, dengan melakukan upaya konservasi, penghijauan, dan pengelolaan limbah yang ramah lingkungan.</li>
+              <li>Pengembangan Budaya Lokal: Memelihara dan mengembangkan kekayaan budaya lokal, termasuk tradisi, tarian, musik, dan kerajinan tangan, sebagai bagian integral dari pengalaman wisata.</li>
+              <li>Pemberdayaan Masyarakat: Meningkatkan kesejahteraan masyarakat lokal dengan melibatkan mereka secara aktif dalam sektor pariwisata, memberikan pelatihan, dan menciptakan peluang pekerjaan.</li>
+
+              <!-- Tambahkan misi lainnya sesuai kebutuhan -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <div class="container"></div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

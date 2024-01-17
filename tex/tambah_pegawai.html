@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <style>
+    .sidebar {
+        height: 100vh;
+        /* Set height to 100% of the viewport height */
+        overflow-y: auto;
+        /* Enable vertical scrolling if the content is too long */
+    }
+
+    .main-content {
+        min-height: a;
+        /* Set a minimum height to ensure the content takes up at least the full viewport height */
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class=" container-fluid">
+            <a class="navbar-brand text-bg-dark" href="#"><i class="fa-solid fa-building-columns"></i> Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="index.php"><i
+                                class="fa-solid fa-house">
+                            </i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-3">
+            <main class="d-flex flex-nowrap b-example-divider b-example-vr sidebar">
+                <h1 class="visually-hidden">Sidebars examples</h1>
+
+                <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px">
+                    <ul class="nav nav-pills flex-column mb-auto">
+                        <li>
+                            <a href="dashboard.php" class="nav-link text-white">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pegawai.php" class="nav-link text-white" aria-current="page">
+                                <i class="fa-solid fa-user"></i> Pegawai
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#table"></use>
+                                </svg>
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#grid"></use>
+                                </svg>
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-white">
+                                <svg class="bi pe-none me-2" width="16" height="16">
+                                    <use xlink:href="#people-circle"></use>
+                                </svg>
+                                Customers
+                            </a>
+                        </li>
+                    </ul>
+                    <hr />
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                class="rounded-circle me-2" />
+                            <strong>mdo</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div></div>
+            </main>
+        </div>
+        <div class="col-md-9">
+            <main>
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Tambah Data Pegawai</h1>
+                </div>
+
+                <div class="album py-2 bg-light">
+                    <div class="container">
+                        <form method="POST" action="" class="needs-validation" enctype="multipart/form-data" novalidate>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">NIP</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="nip" class="form-control" id="validationCustom01">
+                                    <div class="valid-feedback">Nip telah diinput</div>
+                                    <div class="invalid-feedback">Nip Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">NIK</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="nik" class="form-control" id="validationCustom01" required>
+                                    <div class="valid-feedback">Nik telah diinput</div>
+                                    <div class="invalid-feedback">Nik Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">Nama</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="nama" class="form-control" id="validationCustom01">
+                                    <div class="valid-feedback">Nama telah diinput</div>
+                                    <div class="invalid-feedback">Nama Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">Tempat Lahir</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="tempat_lahir" class="form-control" id="validationCustom01">
+                                    <div class="valid-feedback">Tempat Lahir telah diinput</div>
+                                    <div class="invalid-feedback">Tampat Lahir Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">Tanggal Lahir</label>
+                                <div class="col-sm-8">
+                                    <input type="date" name="tanggal_lahir" class="form-control"
+                                        id="validationCustom01">
+                                    <div class="valid-feedback">Tanggal Lahir telah diinput</div>
+                                    <div class="invalid-feedback">Tanggal Lahir Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-4 pt-0">Jenis Kelamin</legend>
+                                <div class="col-sm-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="jenis_kelamin"
+                                            id="gridRadios1" value="L" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Laki-Laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="jenis_kelamin"
+                                            id="gridRadios2" value="P">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Perempuan
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">No Telpon</label>
+                                <div class="col-sm-8">
+                                    <input type="number" name="telpom" class="form-control" id="validationCustom01">
+                                    <div class="valid-feedback">No Telp telah diinput</div>
+                                    <div class="invalid-feedback">No Telp Tidak Boleh Kosong</div>
+                                </div>
+                            </div>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-4 pt-0">Status</legend>
+                                <div class="col-sm-8">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="status" id="gridRadios1"
+                                            value="Menikah" checked>
+                                        <label class="form-check-label" for="gridRadios1">
+                                            Menikah
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="status" id="gridRadios2"
+                                            value="Belum Menikah">
+                                        <label class="form-check-label" for="gridRadios2">
+                                            Belum Menikah
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-4 col-form-label">Agama</label>
+                                <div class="col-sm-8">
+                                    <select name="agama" class="form-select" aria-label="Default select example">
+                                        <option> --- Pilih Agama --- </option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Kristen">Kristen</option>
+                                        <option value="Katolik">Katolik</option>
+                                        <option value="Katolik">Buddha</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="validationCustom01" class="col-sm-4 col-form-label">Upload Foto</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" name="sampul" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-primary" name="simpan" value="SIMPAN">
+                            <input type="button" class="btn btn-warning" value="BATAL" onclick="history.go(-1);">
+                        </form>
+                    </div>
+
+            </main>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="card bg-dark-subtle">
+            <div class="card-body" style="text-align: center;">
+                Copyright &copy;2023 by Muhammad Firas Rizaldiansyah
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/all.min.js"></script>
+
+    <!-- <script src="js/sidebar.js"></script> -->
+
+    <!-- Bagian yang diubah pada skrip JavaScript -->
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+            form.addEventListener(
+                "submit",
+                (event) => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    form.classList.add("was-validated");
+                },
+                false
+            );
+        });
+    })();
+    </script>
+
+</body>
+
+</html>
